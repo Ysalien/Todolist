@@ -1,9 +1,19 @@
-<h1 class="text-center mb-4">Welcome to my todolist app</h1>
+<h1 class="text-center mb-4">Todolisto</h1>
+
 <%= render 'layouts/task_form'  %>
+
+<div id="carrousel">
+  <% @tasks.each do |task|  %>
+      <% unless task.image.nil? %>
+        <%= image_tag task.image, class: "rounded-circle" %>
+      <% end %>
+  <% end %>
+</div>
+
 <div class="container">
-  <ul>
-  <% @categories.each do  |category|%>
-  <li><%= category.title  %></li>
+  <div id="tabs">
+  <% @categories.each do |category|%>
+  <ul id="<%=category.id%>"><%= category.title %></ul>
   <div class="card">
     <ul>
       <% category.tasks.each do |task|  %>
@@ -17,10 +27,10 @@
     </ul>
   </div>
   <% end %>
-  </ul>
+</div>
 </div>
 
-<div class="container">
+<!-- <div class="container">
   <div class="row">
     <% @tasks.each do |task|  %>
       <div class="card col-3">
@@ -31,3 +41,4 @@
     <% end %>
   </div>
 </div>
+-->

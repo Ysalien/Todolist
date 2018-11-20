@@ -1,24 +1,9 @@
-# README
+# Great Todolist
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Voici un todolist super fun avec :
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Une tab bizarre de ses todolist
+- Une navbar responsive pour pouvoir même l'avoir sur ton tel
+- Un dropdown sur ton avatar pour te co et de déco
+- Un carrousel (en cours)
+- Des modaaaals (en cours)
