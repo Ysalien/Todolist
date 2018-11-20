@@ -1,6 +1,6 @@
 # Great Todolisto
 
-Voici un todolist super fun déployé sur heroku, [Great-todolisto](https://dashboard.heroku.com/apps/great-todolisto).
+Voici un todolist super fun déployé sur heroku, [Great-todolisto](https://great-todolisto.herokuapp.com/).
 
 Cette glorieuse app contient :
 - Une tab bizarre de ses todolist (views > index.html.erb ; application.js)
