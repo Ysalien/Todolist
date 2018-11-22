@@ -1,0 +1,6 @@
+<div class="all-emailo">
+<% @all_emails.each do |email| %>
+    <%= link_to email.object, email_path(email), remote: true %><br>
+    <%= link_to "Deleto", email, method: :delete, data: {confirm: "Sure?"}, remote: true%><br>
+<%end%>
+</div>

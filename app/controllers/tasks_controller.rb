@@ -1,5 +1,6 @@
 class TasksController < ApplicationController
-before_action :authenticate_user!
+  before_action :authenticate_user!
+
   def new
     @categories = Category.all
   end
@@ -9,6 +10,10 @@ before_action :authenticate_user!
     @category = Category.find(category_params)
     @task.category = @category
     if @task.save
+      respond_to do |format|
+        format.html { redirect_to task_url }
+        format.js   ## cela va rendre create.js.erb
+      end
       redirect_to root_path
       flash[:notice] = "Task created"
     else
@@ -20,6 +25,15 @@ before_action :authenticate_user!
   def edit
     @task = Task.find(params[:id])
     @categories = Category.all
+
+    #if @task.update_attributes(:status => params[:status])
+    #  respond_to do |format|
+    #    format.html { redirect_to tasks_path }
+    #    format.js
+    #  end
+    #else
+    #  set_flash "Error, please try again"
+    #end
 
   end
 
@@ -40,9 +54,7 @@ before_action :authenticate_user!
     redirect_to root_path
   end
 
-
   private
-
   def task_params
     params.permit(:title, :deadline, :description)
   end

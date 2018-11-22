@@ -52,7 +52,7 @@ $(document).ready(function() {
 
 })
 
-  // Carrousel
+  /* Carrousel
   var $carrousel = $('#carrousel'), // on cible le bloc du carrousel
     $img = $('#carrousel img'), // on cible les images contenues dans le carrousel
     indexImg = $img.length - 1, // on définit l'index du dernier élément
@@ -97,8 +97,8 @@ function slideImg(){
     $currentImg = $img.eq(i);
     $currentImg.css('display', 'block');
     slideImg(); // on oublie pas de relancer la fonction à la fin
-  }, 1000); // on définit l'intervalle à 7000 millisecondes (7s)
+  }, 1000); // on définit l'intervalle en millisecondes (7s)
 }
-slideImg(); // enfin, on lance la fonction une première fois
+slideImg(); // enfin, on lance la fonction une première fois */
 
 });

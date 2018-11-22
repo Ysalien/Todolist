@@ -1,8 +1,8 @@
 <ul>
   <% @tasks.each do |task|  %>
     <li>
-      <%= task.title %>,
-      "Deadline : " <%=  task.deadline.strftime("%D")  %>
+      <!-- <%= check_box_tag 'status', remote: true %> --> <%= task.title %>,
+      Deadline : <%=  task.deadline.strftime("%D") unless task.deadline.nil? %>
        <%= link_to "Edit this task", edit_task_path(task) %>
     </li>
   <% end %>

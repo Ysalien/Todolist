@@ -1,59 +1,45 @@
 @import "variables/personal_variables";
 @import "variables/bootstrap_variables";
-
 @import "bootstrap";
 @import "font-awesome";
 @import "components/*";
 
 body {
-  -webkit-animation:bgChange 1s 1s alternate infinite;
- transition: all 1s ease;
- font-family: URW Gothic L, sans-serif;
+  background-color: #ffffcc;
+  font-family: URW Gothic L, sans-serif;
 }
 
-@-webkit-keyframes bgChange {
-  0% { background:#24b4de; }
-  50% { background:#17a928; }
-  100% { background:#399cb9; }
+a, a:hover {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
 }
 
 .container {
   padding: 30px;
 }
 
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+/*
+Test de css
+background-image: linear-gradient(-90deg, #0000cc, #4d94ff, blue, #3399ff);
+-webkit-animation:bgChange 3s 3s alternate infinite;
+transition: all 3s ease;
+}
+background-image: linear-gradient(-90deg, purple, green, blue, cyan, red, pink, magenta, yellow, white)!important;
+
+@-webkit-keyframes bgChange {
+0% { background:#ccffff; }
+50% { background:#b3ffff; }
+100% { background: #99ffff; }
+
+
 #carrousel {
   padding: 30px;
   display: flex;
   justify-content: center;
-}
-
-.modal {
-  padding: 60px;
-}
-
-.modal-background {
-  background-color: grey;
-  opacity: 0.5;
-}
-
-.close-icon {
-  display:block;
-  box-sizing:border-box;
-  width:20px;
-  height:20px;
-  border-width:3px;
-  border-style: solid;
-  border-color:red;
-  border-radius:100%;
-  background: -webkit-linear-gradient(-45deg, transparent 0%, transparent 46%, white 46%,  white 56%,transparent 56%, transparent 100%), -webkit-linear-gradient(45deg, transparent 0%, transparent 46%, white 46%,  white 56%,transparent 56%, transparent 100%);
-  background-color:red;
-  box-shadow:0px 0px 5px 2px rgba(0,0,0,0.5);
-  transition: all 0.3s ease;
-}
-
-button:hover {
-  background-image: linear-gradient(-90deg, #0000cc, #4d94ff, blue, #3399ff);
-  color: #ff99ff;
-  width: 50px;
-  height: 50px;
-}
+} */

@@ -2,14 +2,6 @@
 
 <%= render 'layouts/task_form'  %>
 
-<div id="carrousel">
-  <% @tasks.each do |task|  %>
-      <% unless task.image.nil? %>
-        <%= image_tag task.image, class: "rounded-circle" %>
-      <% end %>
-  <% end %>
-</div>
-
 <div class="container">
   <div id="tabs">
   <% @categories.each do |category|%>
@@ -30,7 +22,15 @@
 </div>
 </div>
 
-<!-- <div class="container">
+<!-- <div id="carrousel">
+  <% @tasks.each do |task|  %>
+      <% unless task.image.nil? %>
+        <%= image_tag task.image, class: "rounded-circle" %>
+      <% end %>
+  <% end %>
+</div>
+
+<div class="container">
   <div class="row">
     <% @tasks.each do |task|  %>
       <div class="card col-3">
